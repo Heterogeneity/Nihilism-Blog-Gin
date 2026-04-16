@@ -1,0 +1,93 @@
+captcha:
+    height: 80
+    width: 240
+    length: 6
+    max_skew: 0.7
+    dot_count: 80
+email:
+    host: smtp.qq.com
+    port: 465
+    from: xxx@qq.com
+    nickname: 发件人昵称
+    secret: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    is_ssl: true
+es:
+    url: http://127.0.0.1:9200
+    username: ""
+    password: ""
+    is_console_print: true
+gaode:
+    enable: true
+    key: bb1925b1f1bae9d304e11231b5f74078
+jwt:
+    access_token_secret: zOhgaWFeY0MKPtwKle78dN_9jmVRF1sZwJZTAh9zmNk=
+    refresh_token_secret: l7XJWt0o3h533lkbxgAu4eBbZ0ixUixpkaW3fpbVi00=
+    access_token_expiry_time: 2h
+    refresh_token_expiry_time: 7d
+    issuer: blog_go
+mysql:
+    host: 127.0.0.1
+    port: 3306
+    config: charset=utf8mb4&parseTime=True&loc=Local
+    db_name: blog_go
+    username: root
+    password: root
+    max_idle_conns: 10
+    max_open_conns: 100
+    log_mode: info
+qiniu:
+    zone: z0
+    bucket: xxx
+    img_path: https://xxx.xxx/
+    access_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    secret_key: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    use_https: true
+    use_cdn_domains: true
+qq:
+    enable: false
+    app_id: "102812512"
+    app_key: Tq183lINkwueBVZY
+    redirect_uri: http://xxx.xxx/login?flag=qq
+redis:
+    address: 127.0.0.1:6379
+    password: ""
+    db: 0
+system:
+    host: 0.0.0.0
+    port: 8600
+    env: release
+    router_prefix: api
+    use_multipoint: true
+    sessions_secret: 22XahlbZTj81JNGBKb4awPcv5o2mVXfG7CTa1LgXtlQ=
+    oss_type: local
+upload:
+    size: 20
+    path: uploads
+website:
+    logo: "/logo.svg"
+    full_logo: ""
+    title: Nihilism Blog
+    slogan: 时不我待
+    slogan_en: Time and tide wait for no man.
+    description: 这是我的个人博客，无业游民学习Go全栈开发中，底层牛马写过Python爬虫，写过前端（Vue2/3，React），写过后端（Node.js），欢迎您的访问与使用！
+    version: 1.0.0
+    created_at: "2026-3-4"
+    icp_filing: xICP备2024037931号-1
+    public_security_filing:  x公安备34040002000416号
+    bilibili_url: https://space.bilibili.com/xxx
+    gitee_url: https://gitee.com/xxx
+    github_url: https://github.com/xxx
+    name: Nihilism
+    job: 低素质无业游民
+    address: 杜塞尔多夫
+    email: 1390303319@qq.com
+    qq_image: "/card/QQ.png"
+    wechat_image: "/card/Wechat.png"
+    skill: "Goland|Vue2/3|React|Python|Node.js|PHP|MySQL|Redis|PostgreSQL"
+zap:
+    level: info
+    filename: log/go_blog.log
+    max_size: 200
+    max_backups: 30
+    max_age: 5
+    is_console_print: true
